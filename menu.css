@@ -1,0 +1,11 @@
+nav {background:#eee;}
+nav ul {text-align:center;}
+nav ul li {display:inline-block;position:relative;}
+nav ul li:hover {background:#e6e6e6;}
+nav ul li:last-child ul{right:0;}
+nav ul li a {display:block;padding:20px 30px;color:#222;}
+nav ul li ul {position:absolute;min-width:100px;max-width:120px;;background:#e6e6e6;padding:0;}
+nav ul li ul li {width:100%;}
+nav ul li ul li a:hover {background:#eee;}
+nav ul li ul.noJS {display:none;}
+nav ul li:hover ul.noJS {display:block;}
