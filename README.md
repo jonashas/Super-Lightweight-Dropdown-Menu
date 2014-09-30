@@ -5,7 +5,7 @@ A barebone dropdown menu with noJS fallback.
 
 
 ### The HTML
-The HTML added are for instructional purposes; you can have as many sub-menus and sub-links as you need. Here in another unordered list within the <li>.
+The HTML added are for instructional purposes; you can have as many sub-menus and sub-links as you need. Here in another unordered list within the list.
 ```html
 <nav>
 	<ul>
@@ -43,7 +43,7 @@ The HTML added are for instructional purposes; you can have as many sub-menus an
 ```
 
 ### The CSS
-A bare minimum of CSS. The styling itself can be altered in a huge degree. The position:relative_ on nav_ ul_ li_ are there to make the sub-menu drop down directly below the parent. It would do this by default, but added support for responsive design so the last child will drop down from the right of its parent instead of the left
+A bare minimum of CSS. The styling itself can be altered in a huge degree. The _position:relative_ on _nav_ _ul_ _li_ are there to make the sub-menu drop down directly below the parent. It would do this by default, but added support for responsive design so the last child will drop down from the right of its parent instead of the left (to stop the last dropdown item from potentially going off-screen).
 ```css
 nav {background:#eee;}
 nav ul {text-align:center;}
@@ -60,7 +60,7 @@ nav ul li:hover ul.noJS {display:block;}
 
 ### The JQuery
 The beauty of this is the first line which removes the noJS class added for those without javascript, for anyone with javascript that class will be removed. Can change the 300 to any number, that's the speed (in ms) of which the sub-menu will show or collapse itself.
-```jquery
+```javascript
 	$('nav li ul').hide().removeClass('noJS');
 	$('nav li').hover(
 	  function () {
